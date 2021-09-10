@@ -1,0 +1,18 @@
+1. Attach event to the button using script defer or onclick
+https://javascript.info/script-async-defer
+
+Difference bettween attaching a event using onclick  in HTML and addEventListener in JS
+
+https://stackoverflow.com/questions/6348494/addeventlistener-vs-onclick
+
+2. Module Pattern vs Factory Pattern
+https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/factory-functions-and-the-module-pattern
+
+3. height in vh 
+vh is the viewport height. the number you attach is a percentage so height: 100vh will be the 100% height of whatever the device is.
+% is the portion of the container/parent element, it is held inside of, so height: 100% will be the height of the container.
+
+4.requestAnimationFrame
+
+6.60FPS
+
