@@ -1,0 +1,13 @@
+#progress-bar{
+    width:300px;
+    height:30px;
+    background-color:lightgray;
+    background-image:linear-gradient(to right,blue,blue);
+    background-repeat:no-repeat;
+    background-size:0% 100%;
+  }
+  
+  #run-btn {
+    margin:1rem 0;
+    cursor:pointer
+  }
