@@ -1,5 +1,6 @@
 function ProgressBar(duration) {
   const parentBar = document.getElementsByClassName("progress-bar")[0];
+  const clicksCountSpan = document.getElementById("progress-queue");
 
   const bar = document.createElement("div");
   bar.style.background = "red";
@@ -22,12 +23,15 @@ function ProgressBar(duration) {
 
     if (elaspsedTime >= duration) {
       count--;
+      clicksCountSpan.innerText = count;
+
       bar.style.width = 0;
       startTime = null;
       isLoading = false;
       /** Resetting everything as we have completed one cycle here. If user clicks again he have start afresh. */
       console.log("Count---", count);
       if (count <= 0) {
+        clicksCountSpan.innerText = "";
         isLoading = false;
         return;
       }
@@ -42,6 +46,7 @@ function ProgressBar(duration) {
 
   function load() {
     count++;
+    clicksCountSpan.innerText = count;
     if(!isLoading){
         isLoading = true;
         fill();
