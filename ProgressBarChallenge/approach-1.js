@@ -29,4 +29,6 @@ function ProgressBar(duration){
 
 const progressbar = ProgressBar(3000);
 
+// .
+
 document.getElementById("load").addEventListener('click', progressbar.load)
